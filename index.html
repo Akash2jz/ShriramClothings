@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shriram Store - Trendy. Comfortable. Affordable.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== THREE.JS CANVAS ===== -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-logo">✦ SHRIRAM</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#why-us">Why Us</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <h1 class="hero-title" id="heroTitle">Shriram<br />Store</h1>
+    <p class="hero-tagline fade-in" style="transition-delay:0.2s">
+      <span>Trendy.</span> Comfortable. <span>Affordable.</span>
+    </p>
+    <a href="#categories" class="hero-cta fade-in" style="transition-delay:0.4s">
+      Explore Collection
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+    <div class="hero-scroll">
+      <div class="mouse"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <span class="section-label fade-in">About Us</span>
+    <div class="about-grid">
+      <div class="about-text fade-in-left">
+        <h2 class="section-title">Where <span class="gold">Quality</span> Meets Fashion</h2>
+        <p>
+          At Shriram Store, we believe clothing is an expression of personality. We curate every piece with care,
+          offering trendy yet comfortable outfits that don't break the bank. From premium sportswear to sharp formal wear,
+          we bring you the latest fashion with fabrics that feel as good as they look.
+        </p>
+        <p>
+          Our commitment: genuine pricing, exceptional quality, and customer service that makes you feel like family.
+          Whether you're hitting the gym, heading to work, or keeping it casual — we've got you covered.
+        </p>
+      </div>
+      <div class="about-stats fade-in-right">
+        <div class="stat-card" data-count="5000">
+          <div class="stat-number"><span class="counter" data-target="5000">0</span>+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-card" data-count="2000">
+          <div class="stat-number"><span class="counter" data-target="2000">0</span>+</div>
+          <div class="stat-label">Products Sold</div>
+        </div>
+        <div class="stat-card" data-count="50">
+          <div class="stat-number"><span class="counter" data-target="50">0</span>+</div>
+          <div class="stat-label">Designs</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4.9</div>
+          <div class="stat-label">Avg. Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section id="categories">
+    <span class="section-label fade-in">Collections</span>
+    <h2 class="section-title fade-in">Shop by <span class="gold">Category</span></h2>
+    <p class="section-desc fade-in" style="margin-bottom:0">
+      Discover our curated range — from gym-ready sportswear to office-ready formals.
+    </p>
+    <div class="categories-grid">
+      <div class="category-card fade-in-up" style="transition-delay:0.05s">
+        <div class="category-card-inner">
+          <div class="category-card-front">
+            <div class="icon">🏋️</div>
+            <h3>Sportswear &amp; Gym Wear</h3>
+            <p>Premium performance gear</p>
+          </div>
+          <div class="category-card-back">
+            <p>High-performance fabrics designed for comfort during every rep, run, and stretch.</p>
+            <span class="tag">Shop Now</span>
+          </div>
+        </div>
+      </div>
+      <div class="category-card fade-in-up" style="transition-delay:0.15s">
+        <div class="category-card-inner">
+          <div class="category-card-front">
+            <div class="icon">👔</div>
+            <h3>Formal Wear</h3>
+            <p>Sharp &amp; sophisticated</p>
+          </div>
+          <div class="category-card-back">
+            <p>Crisp shirts, tailored pants — professional style that commands respect.</p>
+            <span class="tag">Shop Now</span>
+          </div>
+        </div>
+      </div>
+      <div class="category-card fade-in-up" style="transition-delay:0.25s">
+        <div class="category-card-inner">
+          <div class="category-card-front">
+            <div class="icon">👕</div>
+            <h3>Casual &amp; Daily Wear</h3>
+            <p>Effortlessly stylish</p>
+          </div>
+          <div class="category-card-back">
+            <p>Trendy everyday essentials that keep you comfortable and looking your best.</p>
+            <span class="tag">Shop Now</span>
+          </div>
+        </div>
+      </div>
+      <div class="category-card fade-in-up" style="transition-delay:0.35s">
+        <div class="category-card-inner">
+          <div class="category-card-front">
+            <div class="icon">👖</div>
+            <h3>Track Pants &amp; Uppers</h3>
+            <p>Active &amp; relaxed</p>
+          </div>
+          <div class="category-card-back">
+            <p>Breathable track pants and matching uppers — perfect for workouts or lounging.</p>
+            <span class="tag">Shop Now</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery">
+    <span class="section-label fade-in">Our Gallery</span>
+    <h2 class="section-title fade-in">Featured <span class="gold">Collection</span></h2>
+    <p class="section-desc fade-in" style="margin-bottom:0">
+      A glimpse into our curated selection of premium apparel.
+    </p>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in-up" style="transition-delay:0.05s" data-category="Sportswear">
+        <div class="gallery-img-wrap">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&h=750&q=80" alt="Gym Wear Collection" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-cat">Sportswear</span>
+            <button class="gallery-view" data-img="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" data-caption="Premium Gym Wear — designed for peak performance">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h4>Gym Performance Wear</h4>
+          <span class="gallery-price">Explore</span>
+        </div>
+      </div>
+      <div class="gallery-item fade-in-up" style="transition-delay:0.15s" data-category="Track Wear">
+        <div class="gallery-img-wrap">
+          <img src="https://images.unsplash.com/photo-1476480862126-209bfaa80c82?auto=format&fit=crop&w=600&h=750&q=80" alt="Track Wear Collection" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-cat">Track Wear</span>
+            <button class="gallery-view" data-img="https://images.unsplash.com/photo-1476480862126-209bfaa80c82?auto=format&fit=crop&w=1200&q=80" data-caption="Breathable Track Wear — comfort that moves with you">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h4>Active Track Collection</h4>
+          <span class="gallery-price">Explore</span>
+        </div>
+      </div>
+      <div class="gallery-item fade-in-up" style="transition-delay:0.25s" data-category="Formal">
+        <div class="gallery-img-wrap">
+          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&h=750&q=80" alt="Formal Wear Collection" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-cat">Formal</span>
+            <button class="gallery-view" data-img="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80" data-caption="Sharp Formals — command respect with every step">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h4>Executive Formal Line</h4>
+          <span class="gallery-price">Explore</span>
+        </div>
+      </div>
+      <div class="gallery-item fade-in-up" style="transition-delay:0.35s" data-category="Casual">
+        <div class="gallery-img-wrap">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&h=750&q=80" alt="Casual Wear Collection" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-cat">Casual</span>
+            <button class="gallery-view" data-img="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80" data-caption="Everyday Casual — effortless style for any occasion">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h4>Casual Comfort Tees</h4>
+          <span class="gallery-price">Explore</span>
+        </div>
+      </div>
+      <div class="gallery-item fade-in-up" style="transition-delay:0.1s" data-category="Formal">
+        <div class="gallery-img-wrap">
+          <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=600&h=750&q=80" alt="Business Formal Collection" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-cat">Formal</span>
+            <button class="gallery-view" data-img="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1200&q=80" data-caption="Business Ready — polished professional attire">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h4>Business Formal Edit</h4>
+          <span class="gallery-price">Explore</span>
+        </div>
+      </div>
+      <div class="gallery-item fade-in-up" style="transition-delay:0.2s" data-category="Casual">
+        <div class="gallery-img-wrap">
+          <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=600&h=750&q=80" alt="Casual T-shirt Collection" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-cat">Casual</span>
+            <button class="gallery-view" data-img="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=1200&q=80" data-caption="Premium Tees — soft fabrics, modern cuts">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h4>Essential Tee Range</h4>
+          <span class="gallery-price">Explore</span>
+        </div>
+      </div>
+      <div class="gallery-item fade-in-up" style="transition-delay:0.3s" data-category="Track Wear">
+        <div class="gallery-img-wrap">
+          <img src="https://images.unsplash.com/photo-1552674605-db6ffd48b55e?auto=format&fit=crop&w=600&h=750&q=80" alt="Activewear Collection" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-cat">Track Wear</span>
+            <button class="gallery-view" data-img="https://images.unsplash.com/photo-1552674605-db6ffd48b55e?auto=format&fit=crop&w=1200&q=80" data-caption="Performance Activewear — train harder, recover faster">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h4>Jogger &amp; Track Pants</h4>
+          <span class="gallery-price">Explore</span>
+        </div>
+      </div>
+      <div class="gallery-item fade-in-up" style="transition-delay:0.4s" data-category="Sportswear">
+        <div class="gallery-img-wrap">
+          <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=600&h=750&q=80" alt="Sportswear Collection" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-cat">Sportswear</span>
+            <button class="gallery-view" data-img="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=1200&q=80" data-caption="Sporty Essentials — style meets functionality">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h4>Sporty Essentials</h4>
+          <span class="gallery-price">Explore</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <div class="lightbox-content">
+        <img id="lightboxImg" src="" alt="Product Preview" />
+        <p id="lightboxCaption"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section id="why-us">
+    <span class="section-label fade-in">Why Choose Us</span>
+    <h2 class="section-title fade-in">The <span class="gold">Shriram</span> Difference</h2>
+    <p class="section-desc fade-in" style="margin-bottom:0">
+      What sets us apart? It's not just what we sell — it's how we serve.
+    </p>
+    <div class="why-grid">
+      <div class="why-card fade-in-up" style="transition-delay:0.05s">
+        <div class="why-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s-8-4.5-8-11.8A8 8 0 0120 10.2c0 7.3-8 11.8-8 11.8z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <h3>Premium Quality</h3>
+        <p>Only the finest fabrics and materials — every stitch speaks of durability and comfort.</p>
+      </div>
+      <div class="why-card fade-in-up" style="transition-delay:0.15s">
+        <div class="why-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            <circle cx="12" cy="12" r="4"/>
+          </svg>
+        </div>
+        <h3>Affordable Prices</h3>
+        <p>Top-quality fashion at prices that respect your wallet. Style shouldn't cost a fortune.</p>
+      </div>
+      <div class="why-card fade-in-up" style="transition-delay:0.25s">
+        <div class="why-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+            <polyline points="17 6 23 6 23 12"/>
+          </svg>
+        </div>
+        <h3>Latest Fashion Trends</h3>
+        <p>Stay ahead of the curve with our constantly updated collection of the hottest styles.</p>
+      </div>
+      <div class="why-card fade-in-up" style="transition-delay:0.35s">
+        <div class="why-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+          </svg>
+        </div>
+        <h3>Friendly Staff</h3>
+        <p>Walk in as a customer, leave as family. Our team is here to help you find your perfect look.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <div class="reviews-section" id="reviews">
+    <span class="section-label fade-in">Testimonials</span>
+    <h2 class="section-title fade-in">What Our <span class="gold">Customers</span> Say</h2>
+    <p class="section-desc fade-in">Real reviews from real people who love shopping at Shriram Store.</p>
+    <div class="reviews-carousel fade-in-up">
+      <div class="reviews-track" id="reviewsTrack">
+        <!-- First set -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The fabric quality, fitting, and designs are just perfect. The staff is also very polite and helpful."</p>
+          <span class="review-author">— Nishu T.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Really liked the sportswear here — the quality feels great and the fit is super comfortable. Perfect for gym and daily wear."</p>
+          <span class="review-author">— Yash C.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Trending fashion, cool stuff, genuine price, quality product, and great customer dealing. Must visit place."</p>
+          <span class="review-author">— Gaurav S.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Collection is very trendy and unique. Fast service and very polite staff. Best thing — price is reasonable, perfect value for money!"</p>
+          <span class="review-author">— Arti S.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Super place for army personnel to buy civilian clothes, track pants, uppers, formal shirts, and pants."</p>
+          <span class="review-author">— Bennuri S.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Great experience! The collection is solid — good variety, trendy styles, and reasonable prices. The staff is helpful without being pushy."</p>
+          <span class="review-author">— Prabh L.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Quality and price of clothes are really awesome."</p>
+          <span class="review-author">— Rajendra K.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Premium quality formal clothes and sportswear."</p>
+          <span class="review-author">— Indrapal P.</span>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The fabric quality, fitting, and designs are just perfect. The staff is also very polite and helpful."</p>
+          <span class="review-author">— Nishu T.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Really liked the sportswear here — the quality feels great and the fit is super comfortable. Perfect for gym and daily wear."</p>
+          <span class="review-author">— Yash C.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Trending fashion, cool stuff, genuine price, quality product, and great customer dealing. Must visit place."</p>
+          <span class="review-author">— Gaurav S.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Collection is very trendy and unique. Fast service and very polite staff. Best thing — price is reasonable, perfect value for money!"</p>
+          <span class="review-author">— Arti S.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Super place for army personnel to buy civilian clothes, track pants, uppers, formal shirts, and pants."</p>
+          <span class="review-author">— Bennuri S.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Great experience! The collection is solid — good variety, trendy styles, and reasonable prices. The staff is helpful without being pushy."</p>
+          <span class="review-author">— Prabh L.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Quality and price of clothes are really awesome."</p>
+          <span class="review-author">— Rajendra K.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Premium quality formal clothes and sportswear."</p>
+          <span class="review-author">— Indrapal P.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <span class="section-label fade-in">Visit Us</span>
+    <h2 class="section-title fade-in">Get in <span class="gold">Touch</span></h2>
+    <p class="section-desc fade-in" style="margin-bottom:0">
+      We'd love to welcome you to our store. Drop by, call us, or find us on the map.
+    </p>
+    <div class="contact-grid">
+      <div class="contact-info fade-in-left">
+        <div class="contact-item">
+          <div class="icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Address</h4>
+            <p id="storeAddress">Top Khana, Bazaar, Ambala Cantt, Haryana 133001</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Phone</h4>
+            <p id="storePhone">08299195712</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Store Hours</h4>
+            <p>Mon – Sat: <span class="gold">9:00 AM – 9:00 PM</span></p>
+            <p>Sunday: <span class="gold">8:00 AM – 10:00 PM</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map fade-in-right">
+        <!-- Replace with your actual Google Maps embed URL -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d300!2d76.8469918!3d30.3692032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fb7fda5ce2277%3A0x8082939c3d222b49!2sShriram%20Stores!5e0!3m2!1sen!2sin!4v1"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Shriram Store Location"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-content fade-in">
+      <div class="footer-logo">✦ SHRIRAM STORE</div>
+      <p class="footer-tagline">Trendy. Comfortable. Affordable.</p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">&copy; 2024 Shriram Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+  <a href="https://wa.me/918299195712?text=Hi%20Shriram%20Store!%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20collection."
+     class="whatsapp-btn"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp">
+    <div class="whatsapp-tooltip">Chat with us</div>
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
